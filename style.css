@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
 
 
 .menu-toggle {
@@ -81,4 +85,29 @@
     .menu.open {
         left: 0;
     }
+}
+.about{
+    background-color: cornsilk;
+    padding: 3rem;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    opacity: 0.25;
+    z-index: 0;
+}
+.about-header{
+    font-size: 3rem;
+    padding: 3rem;
+    color: black;
+    z-index: 1;
+}
+.about-text{
+    padding: 3rem;
+    color: black;
+    z-index: 1;
 }
