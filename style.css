@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,500&display=swap');
+:root {
+    --primary-bg-color: #182825;
+    --text-color: #F7FFF7;
+    --accent-color: #22AED1;
+}
 
 * {
     margin: 0;
@@ -11,8 +15,8 @@
     padding: 2rem;
     display: flex;
     justify-content: space-between;
-    background-color: #182825;
-    color: #F7FFF7;
+    background-color:var(--primary-bg-color);
+    color: var(--text-color);
 }
 
 .menu-title {
@@ -20,7 +24,7 @@
 }
 
 .menu-title span {
-    color: #22AED1;
+    color: var(--accent-color);
 
 }
 
@@ -37,7 +41,7 @@
 
 .menu-section-element a {
     text-decoration: none;
-    color: #F7FFF7;
+    color: var(--text-color);
 }
 
 .menu-section-element a:hover {
@@ -46,7 +50,7 @@
 }
 
 .about {
-    height: 90vh;
+    height: 95vh;
     background-image: url("./assets/coding.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -64,7 +68,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #F7FFF7;
+    color: var(--text-color);
+}
+@media (max-width: 767px) {
+    .about {
+        height: 190vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about {
+        height: 130vh;
+    }
 }
 
 .about-header {
@@ -89,7 +103,7 @@
     margin: 10px;
 }
 .about-container button a{
-    color: #182825;
+    color: var(--primary-bg-color);
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
@@ -101,25 +115,50 @@
 }
 .skills {
     padding: 4rem;
-    background-color: #182825;
+    background-color: var(--primary-bg-color);
     text-align: center;
 }
 .skills-container{
     display: flex;
     justify-content: space-around;
 }
+@media (max-width: 767px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
 .skills-box {
-    height: 45vh;
+    height: 55vh;
     width: 25vw;
     padding: 3rem;
     border: 1px solid #6D8EA0;
     border-radius: 5%;
-    box-shadow: 0 7px 20px 3px #F7FFF7;
+    box-shadow: 0 7px 20px 3px var(--text-color);
     text-align: center;
 }
+@media (max-width: 767px) {
+    .skills-box {
+        height: 60vh;
+        width: 80vw;
+        margin: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .skills-box {
+        height: 60vh;
+        width: 80vw;
+        padding: 1rem;
+        margin: 1.5rem;
+    }
 
+}
 .skills-title {
-    color: #F7FFF7;
+    color: var(--text-color);
     margin-bottom: 2rem;
     font-size: 2rem;
 }
@@ -129,21 +168,54 @@
 
 .skills-element {
     font-size: 1.5rem;
-    color: #F7FFF7;
+    color: var(--text-color);
+}
+.certification{
+    height: 90vh;
+}
+.certification-title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.certification-container{
+    display: flex;
+    justify-content: space-around;
+}
+.certification-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
+.certificate-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.certificate-img:hover{
+    transform: scale(1.2);
+}
 .contact {
-    height: 25vh;
-    background-color: #182825;
+    height: 28vh;
+    background-color: var(--primary-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
+@media (max-width: 767px) {
+    .contact {
+        height: 35vh;
+    }
+}
 .contact-title {
     margin-top: 1rem;
-    color: #F7FFF7;
+    color: var(--text-color);
     font-size: 2.5rem;
 }
 
@@ -154,8 +226,8 @@
     border: 2px solid #333029;
     display: inline-block;
     cursor: pointer;
-    color: #182825;
-    font-size: 14px;
+    color: var(--primary-bg-color);
+    font-size: 1rem;
     font-weight: bold;
     padding: 10px 53px;
     text-decoration: none;
