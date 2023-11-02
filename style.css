@@ -171,7 +171,7 @@
     color: var(--text-color);
 }
 .certification{
-    height: 90vh;
+    height: 75vh;
 }
 @media (max-width: 767px) {
     .certification {
@@ -221,11 +221,7 @@
     align-items: center;
     text-align: center;
 }
-@media (max-width: 767px) {
-    .contact {
-        height: 50vh;
-    }
-}
+
 .contact-title {
     margin-top: 1rem;
     color: var(--text-color);
@@ -253,6 +249,7 @@
 }
 
 .contact-social {
+    height: 10vh;
     margin-right: 2rem;
     display: block;
 }
