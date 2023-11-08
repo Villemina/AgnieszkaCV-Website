@@ -213,6 +213,25 @@
 .certificate-img:hover{
     transform: scale(1.2);
 }
+
+
+.projects{
+    width:  100vw;
+    height:  50vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-card{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
 .contact {
     height: 28vh;
     background-color: var(--primary-bg-color);
