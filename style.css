@@ -171,7 +171,7 @@
     color: var(--text-color);
 }
 .certification{
-    height: 90vh;
+    height: 75vh;
 }
 @media (max-width: 767px) {
     .certification {
@@ -213,6 +213,25 @@
 .certificate-img:hover{
     transform: scale(1.2);
 }
+
+
+.projects{
+    width:  100vw;
+    height:  50vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-card{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
 .contact {
     height: 28vh;
     background-color: var(--primary-bg-color);
@@ -221,11 +240,7 @@
     align-items: center;
     text-align: center;
 }
-@media (max-width: 767px) {
-    .contact {
-        height: 50vh;
-    }
-}
+
 .contact-title {
     margin-top: 1rem;
     color: var(--text-color);
@@ -253,6 +268,7 @@
 }
 
 .contact-social {
+    height: 10vh;
     margin-right: 2rem;
     display: block;
 }
